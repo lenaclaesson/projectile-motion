@@ -1,0 +1,73 @@
+{
+  "pageTitle": "Ideal kaströrelse",
+  "subtitle": "Interaktiv fysikmodell för gymnasiet",
+  "intro": "En projektil som skjuts iväg med startfart v0 under en vinkel θ rör sig i en båge på grund av tyngdkraften. I denna modell ignoreras luftmotstånd och start- och landningshöjden är lika.",
+  "assumptions": [
+    "Luftmotstånd försummas.",
+    "Endast gravitationen påverkar projektilen.",
+    "Konstanten g = 9,81 m/s² används i SI-enheter.",
+    "Start- och landningshöjden är lika, vilket ger en symmetrisk bana."
+  ],
+  "equations": [
+    {
+      "label": "Räckvidd",
+      "formula": "R = v₀² sin(2θ) / g",
+      "description": "Avståndet från startpunkten till landningspunkten om start- och landningshöjden är lika."
+    },
+    {
+      "label": "Flygtid",
+      "formula": "t = 2 v₀ sin(θ) / g",
+      "description": "Tiden från utskjutning till att projektilen återkommer till marken."
+    },
+    {
+      "label": "Maximal höjd",
+      "formula": "H = v₀² sin²(θ) / (2g)",
+      "description": "Högsta punkten i banan där den vertikala hastigheten är noll."
+    },
+    {
+      "label": "Horisontell hastighet",
+      "formula": "vₓ = v₀ cos(θ)",
+      "description": "Hastigheten i x-led ändras inte i denna modell."
+    },
+    {
+      "label": "Vertikal hastighet",
+      "formula": "vᵧ = v₀ sin(θ) - gt",
+      "description": "Den vertikala hastigheten minskar linjärt med tiden på grund av tyngdkraften."
+    }
+  ],
+  "labels": {
+    "launchAngle": "Startvinkel",
+    "launchSpeed": "Startfart",
+    "height": "Start- och landningshöjd",
+    "time": "Tid",
+    "range": "Räckvidd",
+    "heightPeak": "Maximal höjd",
+    "velocity": "Hastighet",
+    "xAxis": "x-axel",
+    "yAxis": "y-axel",
+    "ground": "Marknivå"
+  },
+  "reading": {
+    "title": "Hur man tolkar modellen",
+    "text": "Vid 45° ges maximal räckvidd för en given startfart om inga andra krafter verkar. Ju större vinkel, desto längre tid i luften, men den horisontella hastigheten blir mindre. Detta skapar en balans mellan flygtid och horisontell hastighet."
+  },
+  "example": {
+    "title": "Exempel på beräkning",
+    "text": "Om v0 = 20 m/s och θ = 45° blir flygtiden ungefär 2,88 s, räckvidden ungefär 40,8 m och maximal höjd ungefär 10,2 m. Detta är ett typiskt resultat för ideal kaströrelse med g = 9,81 m/s²."
+  },
+  "controls": {
+    "simulation": "Simulering",
+    "settings": "Inställningar",
+    "speed": "Utkasthastighet",
+    "start": "Start",
+    "pause": "Paus",
+    "reset": "Återställ",
+    "elapsedTime": "Förfluten tid",
+    "position": "Position",
+    "range": "Räckvidd",
+    "ready": "Klar",
+    "running": "Löper",
+    "landed": "Nedslagen",
+    "status": "Status"
+  }
+}
